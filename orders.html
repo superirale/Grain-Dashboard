@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome -->
+    <script defer src="//use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="dist/css/app.css">
+
+    <title>Grain Dashboard - Free HTML Admin Template</title>
+</head>
+<body>
+<div class="sidebar-main">
+    <div class="sidebar-header">
+        <a href="/" title="Grain Dashboard"><img src="dist/img/logo.png"></a>
+    </div>
+    <ul class="sidebar-nav">
+        <li class="nav-item"><a class="item" href="/index.html" title="Home"><i class="icon fas fa-home"></i></a></li>
+        <li class="nav-item active"><a class="item" href="/orders.html" title="Orders"><i class="icon far fa-file-alt"></i></a></li>
+        <li class="nav-item"><a class="item" href="/customers.html" title="Customers"><i class="icon fas fa-users"></i></a></li>
+        <li class="nav-item"><a class="item" href="/components.html" title="Components"><i class="icon fas fa-cog"></i></a></li>
+        <li class="nav-item"><a class="item" href="https://github.com/DigitalWheat/Grain-Dashboard" target="_blank" title="View project on GitHub"><i class="icon fab fa-github"></i></a></li>
+        <li class="nav-item divider"></li>
+        <li class="nav-item filled reverse"><a class="item" href="#" title="Logout"><i class="icon fas fa-power-off"></i></a></li>
+    </ul>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+    <a class="navbar-brand" href="/">Grain Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown dropdown-image">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="/demo-assets/img/user-1.jpg"> John Doe
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="page-header">
+        <div class="page-title">Orders</div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card p-3">
+                <div class="table-responsive-sm">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                1091
+                                <span class="badge badge-warning"><i class="fas fa-truck-loading"></i></span>
+                            </th>
+                            <td>Frank Smith</td>
+                            <td>March 25, 2018</td>
+                            <td>$25,250.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1090
+                                <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                            </th>
+                            <td>Jane Roe</td>
+                            <td>March 24, 2018</td>
+                            <td>$17,370.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1089
+                                <span class="badge badge-warning"><i class="fas fa-truck-loading"></i></span>
+                            </th>
+                            <td>Peter Parker</td>
+                            <td>March 24, 2018</td>
+                            <td>$42,890.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1088
+                                <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                            </th>
+                            <td>Frank Smith</td>
+                            <td>March 22, 2018</td>
+                            <td>$12,479.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1087
+                                <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                            </th>
+                            <td>Jane Roe</td>
+                            <td>March 21, 2018</td>
+                            <td>$21,975.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1086
+                                <span class="badge badge-light"><i class="fas fa-box-open"></i></span>
+                            </th>
+                            <td>Peter Parker</td>
+                            <td>March 21, 2018</td>
+                            <td>$18,890.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1085
+                                <span class="badge badge-light"><i class="fas fa-box-open"></i></span>
+                            </th>
+                            <td>Jane Roe</td>
+                            <td>March 20, 2018</td>
+                            <td>$16,480.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                1084
+                                <span class="badge badge-light"><i class="fas fa-box-open"></i></span>
+                            </th>
+                            <td>Frank Smith</td>
+                            <td>March 20, 2018</td>
+                            <td>$14,350.00</td>
+                            <td nowrap>
+                                <button type="button" class="btn btn-outline-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">&laquo;</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">&raquo;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

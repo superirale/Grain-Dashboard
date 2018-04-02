@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome -->
+    <script defer src="//use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="dist/css/app.css">
+
+    <title>Grain Dashboard - Free HTML Admin Template</title>
+</head>
+<body>
+<div class="sidebar-main">
+    <div class="sidebar-header">
+        <a href="/" title="Grain Dashboard"><img src="dist/img/logo.png"></a>
+    </div>
+    <ul class="sidebar-nav">
+        <li class="nav-item active"><a class="item" href="/index.html" title="Home"><i class="icon fas fa-home"></i></a></li>
+        <li class="nav-item"><a class="item" href="/orders.html" title="Orders"><i class="icon far fa-file-alt"></i></a></li>
+        <li class="nav-item"><a class="item" href="/customers.html" title="Customers"><i class="icon fas fa-users"></i></a></li>
+        <li class="nav-item"><a class="item" href="/components.html" title="Components"><i class="icon fas fa-cog"></i></a></li>
+        <li class="nav-item"><a class="item" href="https://github.com/DigitalWheat/Grain-Dashboard" target="_blank" title="View project on GitHub"><i class="icon fab fa-github"></i></a></li>
+        <li class="nav-item divider"></li>
+        <li class="nav-item filled reverse"><a class="item" href="#" title="Logout"><i class="icon fas fa-power-off"></i></a></li>
+    </ul>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+    <a class="navbar-brand" href="/">Grain Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown dropdown-image">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="/demo-assets/img/user-1.jpg"> John Doe
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <div class="page-header">
+        <div class="page-title">Dashboard</div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Revenue</h5>
+                    <canvas id="demoChart1"></canvas>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sales</h5>
+                    <canvas id="demoChart2"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Notifications</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            New orders
+                            <span class="badge badge-primary badge-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Awaiting delivery
+                            <span class="badge badge-primary badge-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Support tickets
+                            <span class="badge badge-warning badge-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Fulfilling
+                            <span class="badge badge-primary badge-pill">5</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Returned
+                            <span class="badge badge-danger badge-pill">1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Customers</h5>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Frank Smith</h5>
+                                <small>Last seen: 15 mins ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>Miami, FL</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Jane Roe</h5>
+                                <small>Last seen: 25 mins ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>San Francisco, CA</small>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Peter Parker</h5>
+                                <small>Last seen: 35 mins ago</small>
+                            </div>
+                            <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                            <small>New-York City, NY</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Latest Orders</h5>
+                    <div class="table-responsive-sm">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row" nowrap>
+                                    1091
+                                    <span class="badge badge-warning"><i class="fas fa-truck-loading"></i></span>
+                                </th>
+                                <td nowrap>Frank Smith</td>
+                                <td nowrap>March 25, 2018</td>
+                                <td nowrap>$25,250.00</td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" nowrap>
+                                    1090
+                                    <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                                </th>
+                                <td nowrap>Jane Roe</td>
+                                <td nowrap>March 24, 2018</td>
+                                <td nowrap>$17,370.00</td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" nowrap>
+                                    1089
+                                    <span class="badge badge-warning"><i class="fas fa-truck-loading"></i></span>
+                                </th>
+                                <td nowrap>Peter Parker</td>
+                                <td nowrap>March 24, 2018</td>
+                                <td nowrap>$42,890.00</td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" nowrap>
+                                    1088
+                                    <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                                </th>
+                                <td nowrap>Frank Smith</td>
+                                <td nowrap>March 22, 2018</td>
+                                <td nowrap>$12,479.00</td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" nowrap>
+                                    1087
+                                    <span class="badge badge-success"><i class="fas fa-truck-moving"></i></span>
+                                </th>
+                                <td nowrap>Jane Roe</td>
+                                <td nowrap>March 21, 2018</td>
+                                <td nowrap>$21,975.00</td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-outline-primary btn-sm">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <footer class="col-12 footer mt-3 pb-3">
+            <div class="container-fluid">
+                <div class="footer-content text-center small">
+                    <span class="text-muted">&copy; 2018 &mdash; Grain Dashboard by <a href="https://digitalwheat.com" title="DigitalWheat" target="_blank">DigitalWheat</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!-- DEMO CHARTS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+    var chart1x = document.getElementById('demoChart1').getContext('2d');
+    var chart1 = new Chart(chart1x, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    label: "Expenses",
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 10, 20, 25],
+                    borderWidth:3,
+                    fill: false,
+                    lineTension: 0
+                },
+                {
+                    label: "Revenue",
+                    backgroundColor: 'rgb(75, 192, 192)',
+                    borderColor: 'rgb(75, 192, 192)',
+                    data: [10, 5, 0, 15, 20, 25, 35],
+                    borderWidth:3,
+                    fill: false,
+                    lineTension: 0
+                }
+            ]
+        },
+        // Configuration options go here
+        options: {
+        }
+    });
+
+    var chart2x = document.getElementById('demoChart2').getContext('2d');
+    var chart2 = new Chart(chart2x, {
+        // The type of chart we want to create
+        type: 'bar',
+        // The data for our dataset
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            datasets: [
+                {
+                    label: "Total Sales",
+                    backgroundColor: ["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(255, 205, 86, 0.2)","rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)"],
+                    borderColor: ["rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)","rgb(153, 102, 255)","rgb(255, 205, 86)","rgb(255, 99, 132)","rgb(255, 159, 64)","rgb(255, 205, 86)","rgb(75, 192, 192)","rgb(54, 162, 235)"],
+                    data: [11, 3, 8, 10, 12, 9, 10, 14, 16, 20, 18, 28],
+                    borderWidth:3,
+                    fill: false,
+                    lineTension: 0
+                },
+            ]
+        },
+        // Configuration options go here
+        options: {
+        }
+    });
+</script>
+</body>
+</html>
